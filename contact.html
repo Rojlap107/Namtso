@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Namtso Construction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="index.html"><img src="assets/logo.png" alt="Namtso Logo" id="logo-img"></a>
+        </div>
+        <div class="menu-btn" id="menu-btn"><i class="fas fa-bars"></i></div>
+        <nav id="nav">
+            <ul class="nav-links">
+                <li><a href="tibetan.html">Tibetan</a></li>
+                <li><a href="about.html">About Namtso</a></li>
+                <li class="has-dropdown">
+                    <a href="services.html">Our Services</a>
+                    <div class="dropdown-menu">
+                        <div class="mega-menu-section">
+                            <h4>Approach</h4>
+                            <div class="mega-menu-links">
+                                <a href="service-residential.html">Residential Construction</a>
+                                <a href="service-commercial.html">Commercial Construction</a>
+                            </div>
+                        </div>
+                        <div class="mega-menu-divider"></div>
+                        <div class="mega-menu-section">
+                            <h4>Expertise</h4>
+                            <div class="expertise-grid">
+                                <div class="mega-menu-links">
+                                    <a href="service-design-build.html">Design & Build</a>
+                                    <a href="service-structural.html">Structural & Civil Works</a>
+                                </div>
+                                <div class="mega-menu-links">
+                                    <a href="service-management.html">Project Management</a>
+                                    <a href="contact.html">Consultation</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="projects.html">Our Project</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Contact Us</h1>
+        <p>Ready to start your next project? We are here to help.</p>
+    </section>
+
+    <section>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <p><strong>Address:</strong><br>Namtso Complex, Between Old 2nd Camp and 3rd Camp, Bylakuppe,
+                            Karnataka 571104</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <p><strong>Phone:</strong><br>+91 97406 59469<br>+91 99729 74334</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <p><strong>Email:</strong><br>contact@namtso.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="namtso-contact">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+91 00000 00000">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required
+                            placeholder="Tell us about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-cta" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px;">
+            <div>
+                <img src="assets/logo.png" alt="Namtso"
+                    style="height: 60px; margin-bottom: 20px; filter: brightness(0) invert(1);">
+                <p>Building with Purpose, Precision, and Pride. Professional construction services in Bylakuppe and
+                    beyond.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul style="margin-top: 20px;">
+                    <li><a href="about.html">About Namtso</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="projects.html">Our Project</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <div style="display: flex; gap: 15px; margin-top: 20px; font-size: 1.5rem;">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Namtso Construction. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
