@@ -1,59 +1,48 @@
-# Namtso Construction 🏗️
+# Construction Website Project (SPA Refactor) 🏗️
 
-### **Building with Purpose, Precision, and Pride**
-
-Namtso Construction is a premium construction firm based in India, dedicated to delivering high-quality residential and commercial solutions. Guided by strong engineering principles and a commitment to transparency, we create spaces people can trust.
+This project is a professional construction company website that has been refactored from a multi-page structure into a modern, high-performance **Single Page Application (SPA)**. The site features a clean, premium aesthetic with smooth-scrolling navigation and adaptive branding components.
 
 ---
 
-## 🌟 **Key Features**
+## 🌟 **Technical Features**
 
--   **Single Page Application (SPA)**: A streamlined, high-performance user experience with smooth-scrolling navigation.
--   **Modern Documentation-Led Design**: Integrated project delivery process and detailed "Why Choose Us" sections based on official company documentation.
--   **Dynamic Branding**: An intelligent navigation bar that adapts its appearance and logo color while scrolling for maximum readability.
--   **Premium Contact Experience**: A minimalist, high-conversion contact form designed for planning application inquiries.
--   **Tibetan Language Support**: Dedicated section for Tibetan-speaking clients.
--   **Fully Responsive**: Optimized for seamless viewing on desktops, tablets, and mobile devices.
+-   **SPA Architecture**: Integrated multiple standalone HTML pages (About, Services, Process, Projects) into a unified codebase for seamless transitions.
+-   **Adaptive Sticky Navigation**: An intelligent navigation bar that dynamically swaps logos and adjusts color schemes based on the user's scroll position.
+-   **Responsive Layout**: Fully optimized for mobile, tablet, and desktop environments using CSS Grid and Flexbox.
+-   **Interactive Contact Form**: Custom-built minimalist form logic with automated feedback and required field validation.
+-   **Scroll Reveal Animations**: Implementation of the Intersection Observer API to trigger fluid entrance animations as sections enter the viewport.
+-   **Multi-Language Structure**: Support for supplementary language versions (Tibetan).
 
 ---
 
 ## 🛠️ **Technology Stack**
 
--   **Frontend**: Semantic HTML5, Modern CSS3 (Vanilla), and Vanilla JavaScript (ES6+).
--   **Icons & Fonts**: Font Awesome 6.0, Google Fonts (Inter).
--   **Animations**: custom CSS keyframes and Intersection Observer API for scroll-trigger animations.
--   **Version Control**: Git & GitHub.
+-   **Frontend**: Semantic HTML5, Vanilla CSS3, and ES6+ JavaScript.
+-   **Visual Enhancements**: Font Awesome for iconography and Google Fonts (Inter) for typography.
+-   **Optimization**: Minimal reliance on external libraries to ensure fast load times and simplified maintenance.
+-   **Version Control**: Git-managed development workflow with documented commit history.
 
 ---
 
-## 📂 **Project Structure**
+## 📂 **Project Directory Structure**
 
 ```text
-├── index.html          # Main homepage (SPA structure)
-├── tibetan.html        # Tibetan version of the site
-├── style.css           # Core design system and animations
-├── script.js           # Interactive logic, scroll effects, and form handling
-├── assets/             # Images, logos, and visual brand assets
-└── requirement/        # Original project documentation (PDFs & TXT)
+├── index.html          # Unified homepage (SPA)
+├── tibetan.html        # Secondary language page
+├── style.css           # Global styles and design system
+├── script.js           # Navigation logic, scroll observers, and form handling
+├── assets/             # Logo variations and visual assets
+└── requirement/        # Source documents and design requirements
 ```
 
 ---
 
-## 🚀 **The Namtso Difference**
+## 🚀 **Development Workflow**
 
-Our process is built on four core pillars:
-1.  **Respecting Your Time**: We cut through the industry average of 70% delays through smart planning and in-house coordination.
-2.  **Transparency & Trust**: Every material choice and decision is communicated clearly to the client.
-3.  **Smarter Building**: We leverage modern machinery and efficient workflows for precision.
-4.  **Tailored Design**: Every space is built to reflect the unique taste and lifestyle of the client.
-
----
-
-## 📞 **Get in Touch**
-
--   **Website**: [https://github.com/Rojlap107/Namtso](https://github.com/Rojlap107/Namtso)
--   **Phone**: +91 97406 59469
--   **Email**: info@namtsoconstruction.com
+1.  **Consolidation**: Merged redundant `.html` files into a single-page structure.
+2.  **Mapping**: Replaced static URLs with internal anchor links (`#section-id`).
+3.  **UI/UX Refinement**: Redesigned functional areas (Contact, Process) to align with modern professional standards.
+4.  **Polish**: Implemented dynamic branding effects (Logo swapping) and fixed layout alignment issues for a cleaner visual hierarchy.
 
 ---
-*Developed with ❤️ by Namtso Team*
+*Technical Documentation for Portfolio Project*
