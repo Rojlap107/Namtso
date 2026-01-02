@@ -38,11 +38,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const handleScroll = () => {
         const scrollY = window.scrollY;
 
-        // Scrolled background
+        // Scrolled background & Logo swap
+        const logoImg = document.getElementById('logo-img');
         if (scrollY > 50) {
             header.classList.add('scrolled');
+            if (logoImg) logoImg.src = 'assets/logo_black.png';
         } else {
             header.classList.remove('scrolled');
+            if (logoImg) logoImg.src = 'assets/logo.png';
         }
 
         // Hide/Show header on scroll
@@ -81,7 +84,17 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                // observer.unobserve(entry.target); // Optional: animate only once
+
+                // Update active link
+                const id = entry.target.getAttribute('id');
+                if (id) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
             }
         });
     }, observerOptions);
@@ -94,32 +107,37 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Form Submission Handling
-    const contactForm = document.getElementById('namtso-contact');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const formData = new FormData(contactForm);
-            const name = formData.get('name');
+    const handleFormSubmit = (formId, successMsg) => {
+        const form = document.getElementById(formId);
+        if (form) {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const formData = new FormData(form);
+                const name = formData.get('name') || formData.get('p-name');
 
-            const submitBtn = contactForm.querySelector('button');
-            const originalText = submitBtn.innerHTML;
+                const submitBtn = form.querySelector('button');
+                const originalText = submitBtn.innerHTML;
 
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-            submitBtn.disabled = true;
-
-            setTimeout(() => {
-                submitBtn.innerHTML = '<i class="fas fa-check"></i> Sent!';
-                submitBtn.style.background = '#10b981'; // Emerald 500
-
-                alert(`Thank you, ${name}! Your message has been sent successfully.`);
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitBtn.disabled = true;
 
                 setTimeout(() => {
-                    submitBtn.innerHTML = originalText;
-                    submitBtn.disabled = false;
-                    submitBtn.style.background = '';
-                    contactForm.reset();
-                }, 2000);
-            }, 1500);
-        });
-    }
+                    submitBtn.innerHTML = '<i class="fas fa-check"></i> Sent!';
+                    submitBtn.style.background = '#10b981'; // Emerald 500
+
+                    alert(`Thank you, ${name}! ${successMsg}`);
+
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                        submitBtn.style.background = '';
+                        form.reset();
+                    }, 2000);
+                }, 1500);
+            });
+        }
+    };
+
+    handleFormSubmit('namtso-contact', 'Your message has been sent successfully.');
+    handleFormSubmit('namtso-project-start', 'Your project request has been submitted. We will get back to you soon!');
 });
