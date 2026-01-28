@@ -373,7 +373,7 @@ header.scrolled .nav-links a:hover {
     align-items: flex-start;
     text-align: left;
     color: var(--light-text);
-    padding: 0 12% 8vh;
+    padding: 0 12% 40px;
     position: relative;
 }
 
@@ -395,15 +395,12 @@ header.scrolled .nav-links a:hover {
 }
 
 .hero h1 {
-    font-size: clamp(3rem, 10vw, 5.5rem);
-    /* Larger, more impactful */
-    margin-bottom: 20px;
-    line-height: 1.05;
+    font-size: clamp(2.2rem, 6vw, 3.5rem);
+    margin-bottom: 10px;
+    line-height: 1.1;
     font-weight: 800;
-    letter-spacing: -0.03em;
-    /* Tighter for impact */
+    letter-spacing: -0.02em;
     color: var(--light-text);
-    /* White text for visibility */
     animation: fadeInUp 1s ease;
 }
 
@@ -1493,7 +1490,7 @@ footer {
     }
 
     .hero {
-        padding: 0 8% 5vh;
+        padding: 0 8% 30px;
         min-height: 500px;
         background-attachment: scroll;
         /* Better for mobile performance */
