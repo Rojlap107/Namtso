@@ -1503,6 +1503,15 @@ footer {
         /* Adjust separately for mobile if needed */
         left: 5%;
     }
+
+    .hero h1 {
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+
+    .hero-sublink {
+        font-size: 1rem;
+    }
 }
 
 .mobile-only {
