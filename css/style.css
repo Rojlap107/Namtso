@@ -367,17 +367,12 @@ header.scrolled .nav-links a:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    text-align: left;
-    color: var(--light-text);
-    padding: 0 12% 10vh;
+    padding: 0 10%;
     position: relative;
+    overflow: hidden;
 }
 
-/* Subtle overlay for text readability */
+/* Darker overlay to match your reference image */
 .hero::before {
     content: '';
     position: absolute;
@@ -385,18 +380,26 @@ header.scrolled .nav-links a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: rgba(0, 0, 0, 0.4);
     pointer-events: none;
+    z-index: 0;
 }
 
 .hero .hero-content {
-    max-width: 900px;
+    width: 100%;
+    max-width: 1400px;
+    /* Widened frame so text doesn't stack too much */
     z-index: 1;
+    position: absolute;
+    bottom: 15%;
+    /* ADJUST THIS: Increase to move UP, Decrease to move DOWN */
+    left: 10%;
 }
 
 .hero h1 {
-    font-size: clamp(2.2rem, 6vw, 3.5rem);
-    margin-bottom: 10px;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    /* Restored some size but kept it flexible */
+    margin-bottom: 5px;
     line-height: 1.1;
     font-weight: 800;
     letter-spacing: -0.02em;
@@ -1490,10 +1493,15 @@ footer {
     }
 
     .hero {
-        padding: 0 8% 8vh;
+        padding: 0 5%;
         min-height: 500px;
         background-attachment: scroll;
-        /* Better for mobile performance */
+    }
+
+    .hero .hero-content {
+        bottom: 15%;
+        /* Adjust separately for mobile if needed */
+        left: 5%;
     }
 }
 
