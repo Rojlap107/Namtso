@@ -4,30 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Project | Namtso Construction</title>
+    <title>Projects | Namtso Construction</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="internal-page">
     <header id="header">
         <div class="logo">
-            <a href="index.html"><img src="assets/logo.png" alt="Namtso Logo" id="logo-img"></a>
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Namtso Logo" class="logo-white" id="logo-img">
+                <img src="assets/logo_black.png" alt="Namtso Logo" class="logo-black">
+            </a>
         </div>
         <div class="menu-btn" id="menu-btn"><i class="fas fa-bars"></i></div>
         <nav id="nav">
             <ul class="nav-links">
                 <li><a href="tibetan.html">Tibetan</a></li>
-                <li><a href="about.html">About Namtso</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li class="has-dropdown">
-                    <a href="services.html">Our Services</a>
+                    <a href="services/">Our Services</a>
                     <div class="dropdown-menu">
                         <div class="mega-menu-section">
                             <h4>Approach</h4>
                             <div class="mega-menu-links">
-                                <a href="service-residential.html">Residential Construction</a>
-                                <a href="service-commercial.html">Commercial Construction</a>
+                                <a href="services/residential.html">Residential Construction</a>
+                                <a href="services/commercial.html">Commercial Construction</a>
                             </div>
                         </div>
                         <div class="mega-menu-divider"></div>
@@ -35,11 +38,11 @@
                             <h4>Expertise</h4>
                             <div class="expertise-grid">
                                 <div class="mega-menu-links">
-                                    <a href="service-design-build.html">Design & Build</a>
-                                    <a href="service-structural.html">Structural & Civil Works</a>
+                                    <a href="services/design-build.html">Design & Build</a>
+                                    <a href="services/structural.html">Structural & Civil Works</a>
                                 </div>
                                 <div class="mega-menu-links">
-                                    <a href="service-management.html">Project Management</a>
+                                    <a href="services/management.html">Project Management</a>
                                     <a href="contact.html">Consultation</a>
                                 </div>
                             </div>
@@ -47,46 +50,113 @@
                     </div>
                 </li>
                 <li><a href="process.html">Process</a></li>
-                <li><a href="projects.html" class="active">Our Project</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="page-header">
-        <h1>Our Project</h1>
-        <p>A showcase of our engineering excellence and precision.</p>
-    </section>
-
-    <section>
+    <section class="page-content-start">
         <div class="section-title">
+            <span>/ Projects</span>
             <h2>Building the Future</h2>
             <p>We've successfully delivered numerous projects ahead of schedule.</p>
         </div>
 
+        <div class="stats-highlight" style="text-align: center; margin: 40px 0 80px;">
+            <div class="stat-item">
+                <span class="stat-number" data-target="24" style="font-size: 5rem; display: block;">0</span>
+                <p class="stat-label" style="font-size: 1.25rem; margin-top: 10px;">Completed & Ongoing Projects</p>
+            </div>
+        </div>
+
         <div class="services-grid">
-            <div class="service-card reveal" style="padding: 0; overflow: hidden;">
-                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=2070"
-                    alt="Project 1" style="width: 100%; height: 250px; object-fit: cover;">
-                <div style="padding: 20px;">
-                    <h4>Modern Villa</h4>
-                    <p>High-end residential build in Bylakuppe.</p>
+            <div class="service-card" style="padding: 0; overflow: hidden;">
+                <div class="project-img-container">
+                    <img src="assets/Site images/KK site.JPG" alt="KK Site Project"
+                        style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div style="padding: 30px;">
+                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Infrastructure</span>
+                    <h4 style="font-size: 1.5rem; margin-bottom: 15px;">KK Site Development</h4>
+                    <p>Professional site preparation and infrastructure development for commercial scales.</p>
                 </div>
             </div>
-            <div class="service-card reveal" style="padding: 0; overflow: hidden;">
-                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070"
-                    alt="Project 2" style="width: 100%; height: 250px; object-fit: cover;">
-                <div style="padding: 20px;">
-                    <h4>Commercial Complex</h4>
-                    <p>Mix-use building with modern amenities.</p>
+            <div class="service-card" style="padding: 0; overflow: hidden;">
+                <div class="project-img-container">
+                    <img src="assets/Site images/Sera Jhe ground1.jpg" alt="Sera Jhe Ground"
+                        style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div style="padding: 30px;">
+                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Public Works</span>
+                    <h4 style="font-size: 1.5rem; margin-bottom: 15px;">Sera Jhe Ground Phase I</h4>
+                    <p>Large-scale site development and leveling work for community institutions.</p>
                 </div>
             </div>
-            <div class="service-card reveal" style="padding: 0; overflow: hidden;">
-                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=2070"
-                    alt="Project 3" style="width: 100%; height: 250px; object-fit: cover;">
-                <div style="padding: 20px;">
-                    <h4>Luxury Apartment</h4>
-                    <p>Quality urban living with superior finishes.</p>
+            <div class="service-card" style="padding: 0; overflow: hidden;">
+                <div class="project-img-container">
+                    <img src="assets/Site images/Sera Jhe ground2.jpg" alt="Sera Jhe Ground Phase II"
+                        style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div style="padding: 30px;">
+                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Public Works</span>
+                    <h4 style="font-size: 1.5rem; margin-bottom: 15px;">Sera Jhe Ground Phase II</h4>
+                    <p>Extended site planning and execution, enhancing structural stability for future expansions.</p>
+                </div>
+            </div>
+            <div class="service-card" style="padding: 0; overflow: hidden;">
+                <div class="project-img-container">
+                    <img src="assets/Site images/Labrang 3.jpg" alt="Labrang Site"
+                        style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div style="padding: 30px;">
+                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Residential</span>
+                    <h4 style="font-size: 1.5rem; margin-bottom: 15px;">Labrang Estate</h4>
+                    <p>Core structural work for luxury residential developments in the region.</p>
+                </div>
+            </div>
+            <div class="service-card" style="padding: 0; overflow: hidden;">
+                <div class="project-img-container">
+                    <img src="assets/Site images/Labrang 8.jpg" alt="Labrang Construction"
+                        style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div style="padding: 30px;">
+                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Construction</span>
+                    <h4 style="font-size: 1.5rem; margin-bottom: 15px;">Labrang Structural Support</h4>
+                    <p>Advanced foundation and column placement, ensuring long-term durability and safety.</p>
+                </div>
+            </div>
+            <div class="service-card" style="padding: 0; overflow: hidden;">
+                <div class="project-img-container">
+                    <img src="assets/Site images/Dhungkor.jpg" alt="Dhungkor Project"
+                        style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div style="padding: 30px;">
+                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Institutional</span>
+                    <h4 style="font-size: 1.5rem; margin-bottom: 15px;">Dhungkor Temple Foundation</h4>
+                    <p>Specialized structural engineering for traditional architecture projects.</p>
+                </div>
+            </div>
+            <div class="service-card" style="padding: 0; overflow: hidden;">
+                <div class="project-img-container">
+                    <img src="assets/Site images/Private residence 5.jpg" alt="Private Residence"
+                        style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div style="padding: 30px;">
+                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Residential</span>
+                    <h4 style="font-size: 1.5rem; margin-bottom: 15px;">Modern Private Residence</h4>
+                    <p>Complete design-build execution for a high-end private family home.</p>
+                </div>
+            </div>
+            <div class="service-card" style="padding: 0; overflow: hidden;">
+                <div class="project-img-container">
+                    <img src="assets/Site images/TDL camp5 site.JPG" alt="TDL Camp 5 Project"
+                        style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div style="padding: 30px;">
+                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Site Works</span>
+                    <h4 style="font-size: 1.5rem; margin-bottom: 15px;">TDL Camp 5 Site</h4>
+                    <p>Comprehensive construction management and execution for settlement infrastructure.</p>
                 </div>
             </div>
         </div>
@@ -94,28 +164,40 @@
 
     <!-- Footer -->
     <footer>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px;">
-            <div>
-                <img src="assets/logo.png" alt="Namtso"
-                    style="height: 60px; margin-bottom: 20px; filter: brightness(0) invert(1);">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Namtso Construction">
+                </a>
                 <p>Building with Purpose, Precision, and Pride. Professional construction services in Bylakuppe and
                     beyond.</p>
-            </div>
-            <div>
-                <h4>Quick Links</h4>
-                <ul style="margin-top: 20px;">
-                    <li><a href="about.html">About Namtso</a></li>
-                    <li><a href="services.html">Our Services</a></li>
-                    <li><a href="projects.html">Our Project</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Follow Us</h4>
-                <div style="display: flex; gap: 15px; margin-top: 20px; font-size: 1.5rem;">
+                <div class="footer-social">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <div class="footer-nav-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tibetan.html">Tibetan</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="process.html">Process</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services/residential.html">Residential</a></li>
+                        <li><a href="services/commercial.html">Commercial</a></li>
+                        <li><a href="services/design-build.html">Design & Build</a></li>
+                        <li><a href="services/structural.html">Structural & Civil</a></li>
+                        <li><a href="services/management.html">Project Management</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -123,7 +205,7 @@
             <p>&copy; 2025 Namtso Construction. All Rights Reserved.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

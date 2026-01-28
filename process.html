@@ -10,15 +10,18 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="internal-page">
 
     <!-- Header -->
     <header id="header">
         <div class="logo">
-            <a href="index.html"><img src="assets/logo.png" alt="Namtso Logo" id="logo-img"></a>
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Namtso Logo" class="logo-white" id="logo-img">
+                <img src="assets/logo_black.png" alt="Namtso Logo" class="logo-black">
+            </a>
         </div>
         <div class="menu-btn" id="menu-btn">
             <i class="fas fa-bars"></i>
@@ -26,15 +29,15 @@
         <nav id="nav">
             <ul class="nav-links">
                 <li><a href="tibetan.html">Tibetan</a></li>
-                <li><a href="about.html">About Namtso</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li class="has-dropdown">
-                    <a href="services.html">Our Services</a>
+                    <a href="services/">Our Services</a>
                     <div class="dropdown-menu">
                         <div class="mega-menu-section">
                             <h4>Approach</h4>
                             <div class="mega-menu-links">
-                                <a href="service-residential.html">Residential Construction</a>
-                                <a href="service-commercial.html">Commercial Construction</a>
+                                <a href="services/residential.html">Residential Construction</a>
+                                <a href="services/commercial.html">Commercial Construction</a>
                             </div>
                         </div>
                         <div class="mega-menu-divider"></div>
@@ -42,11 +45,11 @@
                             <h4>Expertise</h4>
                             <div class="expertise-grid">
                                 <div class="mega-menu-links">
-                                    <a href="service-design-build.html">Design & Build</a>
-                                    <a href="service-structural.html">Structural & Civil Works</a>
+                                    <a href="services/design-build.html">Design & Build</a>
+                                    <a href="services/structural.html">Structural & Civil Works</a>
                                 </div>
                                 <div class="mega-menu-links">
-                                    <a href="service-management.html">Project Management</a>
+                                    <a href="services/management.html">Project Management</a>
                                     <a href="contact.html">Consultation</a>
                                 </div>
                             </div>
@@ -54,70 +57,94 @@
                     </div>
                 </li>
                 <li><a href="process.html" class="active">Process</a></li>
-                <li><a href="projects.html">Our Project</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Page Header -->
-    <section class="page-header"
-        style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=2070');">
-        <h1>Our Delivery Process</h1>
-        <p>A systematic 5-step approach to bring your vision to life.</p>
-    </section>
-
     <!-- Process Content -->
-    <section>
+    <section class="page-content-start">
         <div class="section-title">
+            <span>/ Process</span>
             <h2>From Idea to Completion</h2>
             <p>We ensure every project is handled with precision and care at every stage.</p>
         </div>
 
-        <div class="process-detailed">
+        <div class="process-detailed" style="max-width: 900px; margin: 0 auto; padding-bottom: 100px;">
             <div class="step-card reveal">
-                <div class="step-icon">1</div>
+                <div class="step-visual">
+                    <div class="step-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
                 <div class="step-content">
-                    <h3>Understand Your Requirements</h3>
-                    <p>Everything begins with a conversation. We listen carefully to your needs, budget, timeline, and
-                        site conditions. This ensures that our expectations are perfectly aligned from the very start.
-                    </p>
+                    <span class="step-label">Step 01</span>
+                    <h3>Initial Consultation</h3>
+                    <p>Everything begins with a conversation. We listen carefully to your needs, budget, and timeline.
+                        This collaborative phase ensures our mechanical and structural goals are perfectly aligned with
+                        your vision.</p>
                 </div>
             </div>
 
             <div class="step-card reveal">
-                <div class="step-icon">2</div>
+                <div class="step-visual">
+                    <div class="step-icon icon-outline">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
                 <div class="step-content">
-                    <h3>Plan & Design</h3>
-                    <p>Our expert team develops practical designs and engineering solutions. We focus on structural
-                        safety, spatial efficiency, and cost clarity, turning your ideas into detailed blueprints.</p>
+                    <span class="step-label">Step 02</span>
+                    <h3>Strategic Planning</h3>
+                    <p>Our engineering team develops practical, cost-effective blueprints. We focus on structural
+                        integrity, spatial efficiency, and meticulous adherence to local building codes before a single
+                        brick is laid.</p>
                 </div>
             </div>
 
             <div class="step-card reveal">
-                <div class="step-icon">3</div>
+                <div class="step-visual">
+                    <div class="step-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
                 <div class="step-content">
-                    <h3>Transparent Costing & Scheduling</h3>
-                    <p>No hidden fees or surprise delays. We provide clear estimates, detailed material specifications,
-                        and a strict timeline so you know exactly what to expect and when.</p>
+                    <span class="step-label">Step 03</span>
+                    <h3>Transparent Proposal</h3>
+                    <p>No surprises. We provide a detailed breakdown of costs, material specifications, and a project
+                        milestone schedule. We believe transparency is the foundation of a successful partnership.</p>
                 </div>
             </div>
 
             <div class="step-card reveal">
-                <div class="step-icon">4</div>
+                <div class="step-visual">
+                    <div class="step-icon icon-outline">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
                 <div class="step-content">
-                    <h3>Execution & Supervision</h3>
-                    <p>This is where the magic happens. Our skilled workers use high-quality materials and modern
-                        machinery, all overseen by professional site supervisors to ensure the highest standards.</p>
+                    <span class="step-label">Step 04</span>
+                    <h3>Quality Execution</h3>
+                    <p>Construction begins under strict supervision. Our skilled craftsmen and engineers work in harmony
+                        to ensure every phase—from foundation to finish—meets our exacting standards.</p>
                 </div>
             </div>
 
             <div class="step-card reveal">
-                <div class="step-icon">5</div>
+                <div class="step-visual">
+                    <div class="step-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                </div>
                 <div class="step-content">
-                    <h3>Review & Handover</h3>
-                    <p>We perform a thorough final walkthrough with you to address any last details. Then, we hand over
-                        your completed project—a space ready for you to use with absolute confidence.</p>
+                    <span class="step-label">Step 05</span>
+                    <h3>Project Handover</h3>
+                    <p>We conduct a final, rigorous inspection with you to ensure every detail is perfect. We take pride
+                        in delivering a space that is not only built to last but exceeds your expectations.</p>
                 </div>
             </div>
         </div>
@@ -126,28 +153,40 @@
     <!-- Footer ... (same as others) -->
     <!-- Footer -->
     <footer>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px;">
-            <div>
-                <img src="assets/logo.png" alt="Namtso"
-                    style="height: 60px; margin-bottom: 20px; filter: brightness(0) invert(1);">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Namtso Construction">
+                </a>
                 <p>Building with Purpose, Precision, and Pride. Professional construction services in Bylakuppe and
                     beyond.</p>
-            </div>
-            <div>
-                <h4>Quick Links</h4>
-                <ul style="margin-top: 20px;">
-                    <li><a href="about.html">About Namtso</a></li>
-                    <li><a href="services.html">Our Services</a></li>
-                    <li><a href="projects.html">Our Project</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Follow Us</h4>
-                <div style="display: flex; gap: 15px; margin-top: 20px; font-size: 1.5rem;">
+                <div class="footer-social">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <div class="footer-nav-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tibetan.html">Tibetan</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="process.html">Process</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services/residential.html">Residential</a></li>
+                        <li><a href="services/commercial.html">Commercial</a></li>
+                        <li><a href="services/design-build.html">Design & Build</a></li>
+                        <li><a href="services/structural.html">Structural & Civil</a></li>
+                        <li><a href="services/management.html">Project Management</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -156,7 +195,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

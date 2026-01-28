@@ -7,27 +7,30 @@
     <title>Tibetan Section | Namtso Construction</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <header id="header" class="scrolled">
+<body class="internal-page">
+    <header id="header">
         <div class="logo">
-            <a href="index.html"><img src="assets/logo.png" alt="Namtso Logo" id="logo-img"></a>
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Namtso Logo" class="logo-white" id="logo-img">
+                <img src="assets/logo_black.png" alt="Namtso Logo" class="logo-black">
+            </a>
         </div>
         <div class="menu-btn" id="menu-btn"><i class="fas fa-bars"></i></div>
         <nav id="nav">
             <ul class="nav-links">
                 <li><a href="tibetan.html" class="active">Tibetan</a></li>
-                <li><a href="about.html">About Namtso</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li class="has-dropdown">
-                    <a href="services.html">Our Services</a>
+                    <a href="services/">Our Services</a>
                     <div class="dropdown-menu">
                         <div class="mega-menu-section">
                             <h4>Approach</h4>
                             <div class="mega-menu-links">
-                                <a href="service-residential.html">Residential Construction</a>
-                                <a href="service-commercial.html">Commercial Construction</a>
+                                <a href="services/residential.html">Residential Construction</a>
+                                <a href="services/commercial.html">Commercial Construction</a>
                             </div>
                         </div>
                         <div class="mega-menu-divider"></div>
@@ -35,11 +38,11 @@
                             <h4>Expertise</h4>
                             <div class="expertise-grid">
                                 <div class="mega-menu-links">
-                                    <a href="service-design-build.html">Design & Build</a>
-                                    <a href="service-structural.html">Structural & Civil Works</a>
+                                    <a href="services/design-build.html">Design & Build</a>
+                                    <a href="services/structural.html">Structural & Civil Works</a>
                                 </div>
                                 <div class="mega-menu-links">
-                                    <a href="service-management.html">Project Management</a>
+                                    <a href="services/management.html">Project Management</a>
                                     <a href="contact.html">Consultation</a>
                                 </div>
                             </div>
@@ -47,27 +50,71 @@
                     </div>
                 </li>
                 <li><a href="process.html">Process</a></li>
-                <li><a href="projects.html">Our Project</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="page-header" style="height: 60vh;">
-        <h1>བོད་ཡིག (Tibetan)</h1>
-        <p>This section is currently being translated. Please check back soon.</p>
-        <div style="margin-top: 40px; font-size: 1.5rem; line-height: 2;">
+    <section class="page-content-start" style="text-align: center;">
+        <div class="section-title">
+            <span>/ Tibetan</span>
+            <h2>བོད་ཡིག (Tibetan)</h2>
+        </div>
+        <p
+            style="font-size: 1.125rem; color: var(--text-muted); margin-bottom: 40px; margin-left: auto; margin-right: auto; max-width: 600px;">
+            This section is currently being
+            translated. Please check back soon.</p>
+        <div style="font-size: 1.5rem; line-height: 2;">
             <p>གནམ་མཚོ་བཟོ་སྐྲུན་ཁང་།</p>
             <p>འཆར་འགོད་དང་བཟོ་སྐྲུན་གྱི་སྤུས་ཚད་མཐོ་ཤོས།</p>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Namtso Construction">
+                </a>
+                <p>Building with Purpose, Precision, and Pride. Professional construction services in Bylakuppe and
+                    beyond.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <div class="footer-nav-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tibetan.html">Tibetan</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="process.html">Process</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services/residential.html">Residential</a></li>
+                        <li><a href="services/commercial.html">Commercial</a></li>
+                        <li><a href="services/design-build.html">Design & Build</a></li>
+                        <li><a href="services/structural.html">Structural & Civil</a></li>
+                        <li><a href="services/management.html">Project Management</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="footer-bottom">
             <p>&copy; 2025 Namtso Construction. All Rights Reserved.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

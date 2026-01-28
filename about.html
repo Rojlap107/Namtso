@@ -4,21 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Namtso | Building with Purpose, Precision, and Pride</title>
+    <title>About Us | Building with Purpose, Precision, and Pride</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="internal-page">
 
     <!-- Header -->
     <header id="header">
         <div class="logo">
-            <a href="index.html"><img src="assets/logo.png" alt="Namtso Logo" id="logo-img"></a>
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Namtso Logo" class="logo-white" id="logo-img">
+                <img src="assets/logo_black.png" alt="Namtso Logo" class="logo-black">
+            </a>
         </div>
         <div class="menu-btn" id="menu-btn">
             <i class="fas fa-bars"></i>
@@ -26,15 +29,15 @@
         <nav id="nav">
             <ul class="nav-links">
                 <li><a href="tibetan.html">Tibetan</a></li>
-                <li><a href="about.html" class="active">About Namtso</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
                 <li class="has-dropdown">
-                    <a href="services.html">Our Services</a>
+                    <a href="services/">Our Services</a>
                     <div class="dropdown-menu">
                         <div class="mega-menu-section">
                             <h4>Approach</h4>
                             <div class="mega-menu-links">
-                                <a href="service-residential.html">Residential Construction</a>
-                                <a href="service-commercial.html">Commercial Construction</a>
+                                <a href="services/residential.html">Residential Construction</a>
+                                <a href="services/commercial.html">Commercial Construction</a>
                             </div>
                         </div>
                         <div class="mega-menu-divider"></div>
@@ -42,11 +45,11 @@
                             <h4>Expertise</h4>
                             <div class="expertise-grid">
                                 <div class="mega-menu-links">
-                                    <a href="service-design-build.html">Design & Build</a>
-                                    <a href="service-structural.html">Structural & Civil Works</a>
+                                    <a href="services/design-build.html">Design & Build</a>
+                                    <a href="services/structural.html">Structural & Civil Works</a>
                                 </div>
                                 <div class="mega-menu-links">
-                                    <a href="service-management.html">Project Management</a>
+                                    <a href="services/management.html">Project Management</a>
                                     <a href="contact.html">Consultation</a>
                                 </div>
                             </div>
@@ -54,72 +57,64 @@
                     </div>
                 </li>
                 <li><a href="process.html">Process</a></li>
-                <li><a href="projects.html">Our Project</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <h1>About Namtso</h1>
-        <p>Creating spaces you can trust through engineering excellence.</p>
-    </section>
-
-    <!-- About Content -->
-    <section>
-        <div class="about-container">
-            <div class="about-text">
-                <h2>Our Story & Philosophy</h2>
-                <p>Namtso is a construction firm committed to building with <strong>purpose, precision, and
-                        pride</strong>. Guided by strong engineering principles and practical design, we create
-                    construction solutions that balance quality, cost, durability, and aesthetics.</p>
-                <p>From homes to commercial and customized projects, we focus on clear communication, skilled
-                    workmanship, and timely delivery. Our mission is to build trusted spaces through engineering
-                    excellence and transparent execution.</p>
-
-                <h2 style="margin-top: 40px;">The Namtso Difference</h2>
-                <div class="about-features">
-                    <div class="feature-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h4>Time Respect</h4>
-                            <p>We respect your time. Smart planning and in-house subcontracting allow us to deliver
-                                projects ahead of schedule without compromising safety.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fas fa-handshake"></i>
-                        <div>
-                            <h4>Transparency & Trust</h4>
-                            <p>Clear communication is our priority. You'll know the 'why' behind every decision,
-                                ensuring a smooth and honest partnership.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fas fa-microchip"></i>
-                        <div>
-                            <h4>Technology & Innovation</h4>
-                            <p>We continuously upgrade our design, materials, and machinery to ensure your build is
-                                modern, precise, and built to last.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fas fa-pen-nib"></i>
-                        <div>
-                            <h4>Tailored Design</h4>
-                            <p>Every project is personal. Our architectural solutions are designed to be functional,
-                                non-generic, and uniquely yours.</p>
-                        </div>
-                    </div>
+    <!-- About Content - Clean Layout (No Hero) -->
+    <section class="about-difference page-content-start">
+        <div class="difference-container">
+            <!-- Left Column: Headline & Description -->
+            <div class="difference-intro">
+                <span class="section-label">/ About Us</span>
+                <h2>The Namtso<br>Difference</h2>
+                <p>For years, we've been a trusted construction partner, earning the trust of communities in Bylakuppe,
+                    Karnataka, and surrounding areas through engineering excellence and transparent execution.</p>
+                <div class="difference-cta">
+                    <a href="contact.html" class="cta-link">Contact Us <i class="fas fa-arrow-right"></i></a>
+                    <a href="projects.html" class="cta-link">View Projects <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-            <div class="about-img">
-                <img src="assets/about-us.jpeg" alt="Namtso Philosophy">
-                <div
-                    style="background: var(--bg-sand); padding: 30px; border-radius: 10px; margin-top: 30px; border-left: 5px solid var(--secondary-color);">
-                    <p><em>"Our integrated approach reduces delays, controls costs, and ensures smoother execution from
-                            start to finish."</em></p>
+
+            <!-- Right Column: Feature Grid -->
+            <div class="difference-features">
+                <div class="diff-feature">
+                    <div class="diff-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div>
+                        <h4>Competitive Pricing</h4>
+                        <p>Experience quality without breaking the bank—we offer fair and competitive pricing.</p>
+                    </div>
+                </div>
+                <div class="diff-feature">
+                    <div class="diff-icon">
+                        <i class="fas fa-hand-holding-dollar"></i>
+                    </div>
+                    <div>
+                        <h4>Transparent Budgeting</h4>
+                        <p>Don't let budget constraints stop you—we work with you to find the best solutions.</p>
+                    </div>
+                </div>
+                <div class="diff-feature">
+                    <div class="diff-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div>
+                        <h4>Certified Experts</h4>
+                        <p>Choose Namtso for proven excellence backed by certified professionals.</p>
+                    </div>
+                </div>
+                <div class="diff-feature">
+                    <div class="diff-icon">
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <div>
+                        <h4>100% Satisfaction</h4>
+                        <p>Don't just take our word for it—see what our clients say about Namtso.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,28 +122,40 @@
 
     <!-- Footer -->
     <footer>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px;">
-            <div>
-                <img src="assets/logo.png" alt="Namtso"
-                    style="height: 60px; margin-bottom: 20px; filter: brightness(0) invert(1);">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Namtso Construction">
+                </a>
                 <p>Building with Purpose, Precision, and Pride. Professional construction services in Bylakuppe and
                     beyond.</p>
-            </div>
-            <div>
-                <h4>Quick Links</h4>
-                <ul style="margin-top: 20px;">
-                    <li><a href="about.html">About Namtso</a></li>
-                    <li><a href="services.html">Our Services</a></li>
-                    <li><a href="projects.html">Our Project</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Follow Us</h4>
-                <div style="display: flex; gap: 15px; margin-top: 20px; font-size: 1.5rem;">
+                <div class="footer-social">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <div class="footer-nav-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tibetan.html">Tibetan</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="process.html">Process</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services/residential.html">Residential</a></li>
+                        <li><a href="services/commercial.html">Commercial</a></li>
+                        <li><a href="services/design-build.html">Design & Build</a></li>
+                        <li><a href="services/structural.html">Structural & Civil</a></li>
+                        <li><a href="services/management.html">Project Management</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -163,7 +170,7 @@
     </a>
 
     <!-- Custom JS -->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
