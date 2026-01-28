@@ -369,11 +369,11 @@ header.scrolled .nav-links a:hover {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-start;
     text-align: left;
     color: var(--light-text);
-    padding: 0 12%;
+    padding: 0 12% 15vh;
     position: relative;
 }
 
@@ -1490,6 +1490,13 @@ footer {
     .page-content-start {
         padding-top: 120px !important;
         /* Smaller gap for mobile header */
+    }
+
+    .hero {
+        padding: 0 8% 12vh;
+        min-height: 500px;
+        background-attachment: scroll;
+        /* Better for mobile performance */
     }
 }
 
