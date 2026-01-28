@@ -373,7 +373,7 @@ header.scrolled .nav-links a:hover {
     align-items: flex-start;
     text-align: left;
     color: var(--light-text);
-    padding: 0 12% 40px;
+    padding: 0 12% 10vh;
     position: relative;
 }
 
@@ -1490,7 +1490,7 @@ footer {
     }
 
     .hero {
-        padding: 0 8% 30px;
+        padding: 0 8% 8vh;
         min-height: 500px;
         background-attachment: scroll;
         /* Better for mobile performance */
