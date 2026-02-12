@@ -8,7 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
 </head>
 
 <body class="internal-page">
@@ -22,30 +26,15 @@
         <div class="menu-btn" id="menu-btn"><i class="fas fa-bars"></i></div>
         <nav id="nav">
             <ul class="nav-links">
-                <li><a href="tibetan.html">Tibetan</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li class="has-dropdown">
                     <a href="services/">Our Services</a>
                     <div class="dropdown-menu">
                         <div class="mega-menu-section">
-                            <h4>Approach</h4>
                             <div class="mega-menu-links">
                                 <a href="services/residential.html">Residential Construction</a>
                                 <a href="services/commercial.html">Commercial Construction</a>
-                            </div>
-                        </div>
-                        <div class="mega-menu-divider"></div>
-                        <div class="mega-menu-section">
-                            <h4>Expertise</h4>
-                            <div class="expertise-grid">
-                                <div class="mega-menu-links">
-                                    <a href="services/design-build.html">Design & Build</a>
-                                    <a href="services/structural.html">Structural & Civil Works</a>
-                                </div>
-                                <div class="mega-menu-links">
-                                    <a href="services/management.html">Project Management</a>
-                                    <a href="contact.html">Consultation</a>
-                                </div>
+                                <a href="services/interior.html">Interior Design</a>
                             </div>
                         </div>
                     </div>
@@ -72,92 +61,161 @@
         </div>
 
         <div class="services-grid">
+            <!-- Residential Projects -->
             <div class="service-card" style="padding: 0; overflow: hidden;">
-                <div class="project-img-container">
-                    <img src="assets/Site images/KK site.JPG" alt="KK Site Project"
+                <div class="project-img-container has-gallery" onclick="openGallery(this)"
+                    data-images="assets/Site images/Private Residence 1.jpg,assets/Site images/Services/Residential Project/Private Residence 1/Private Residence 1.jpg,assets/Site images/Services/Residential Project/Private Residence 1/Private Residence 2.jpg">
+                    <img src="assets/Site images/Private Residence 1.jpg" alt="Private Residence 1"
                         style="width: 100%; height: 300px; object-fit: cover;">
                 </div>
                 <div style="padding: 30px;">
-                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Infrastructure</span>
-                    <h4 style="font-size: 1.5rem; margin-bottom: 15px;">KK Site Development</h4>
-                    <p>Professional site preparation and infrastructure development for commercial scales.</p>
+                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Private Residence
+                        1</span>
+                    <h4 style="font-size: 1.5rem; margin-bottom: 0;">Residential Project</h4>
+                </div>
+            </div>
+            <div class="service-card" style="padding: 0; overflow: hidden;">
+                <div class="project-img-container has-gallery" onclick="openGallery(this)"
+                    data-images="assets/Site images/Private Residence 2.jpg,assets/Site images/Services/Residential Project/Private Residence 2/Private Residence 3.jpg,assets/Site images/Services/Residential Project/Private Residence 2/Private Residence 4.jpg">
+                    <img src="assets/Site images/Private Residence 2.jpg" alt="Private Residence 2"
+                        style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div style="padding: 30px;">
+                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Private Residence
+                        2</span>
+                    <h4 style="font-size: 1.5rem; margin-bottom: 0;">Residential Project</h4>
                 </div>
             </div>
             <div class="service-card" style="padding: 0; overflow: hidden;">
                 <div class="project-img-container">
-                    <img src="assets/Site images/Sera Jhe ground1.jpg" alt="Sera Jhe Ground"
+                    <img src="assets/Site images/Private Residence 3.jpg" alt="Private Residence 3"
                         style="width: 100%; height: 300px; object-fit: cover;">
                 </div>
                 <div style="padding: 30px;">
-                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Public Works</span>
-                    <h4 style="font-size: 1.5rem; margin-bottom: 15px;">Sera Jhe Ground Phase I</h4>
-                    <p>Large-scale site development and leveling work for community institutions.</p>
+                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Private Residence
+                        3</span>
+                    <h4 style="font-size: 1.5rem; margin-bottom: 0;">Residential Project</h4>
                 </div>
             </div>
             <div class="service-card" style="padding: 0; overflow: hidden;">
                 <div class="project-img-container">
-                    <img src="assets/Site images/Sera Jhe ground2.jpg" alt="Sera Jhe Ground Phase II"
+                    <img src="assets/Site images/Private Residence 4.jpg" alt="Private Residence 4"
                         style="width: 100%; height: 300px; object-fit: cover;">
                 </div>
                 <div style="padding: 30px;">
-                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Public Works</span>
-                    <h4 style="font-size: 1.5rem; margin-bottom: 15px;">Sera Jhe Ground Phase II</h4>
-                    <p>Extended site planning and execution, enhancing structural stability for future expansions.</p>
+                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Private Residence
+                        4</span>
+                    <h4 style="font-size: 1.5rem; margin-bottom: 0;">Residential Project</h4>
+                </div>
+            </div>
+            <div class="service-card" style="padding: 0; overflow: hidden;">
+                <div class="project-img-container has-gallery" onclick="openGallery(this)"
+                    data-images="assets/Site images/Labrang 1.JPG,assets/Site images/Labrang 2.jpg,assets/Site images/Labrang 3.jpg,assets/Site images/Labrang 4.jpg,assets/Site images/Labrang 5.jpg,assets/Site images/Labrang 6.jpg">
+                    <img src="assets/Site images/Labrang 1.JPG" alt="Labrang"
+                        style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div style="padding: 30px;">
+                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Labrang Phase
+                        Development</span>
+                    <h4 style="font-size: 1.5rem; margin-bottom: 0;">Residential Project</h4>
                 </div>
             </div>
             <div class="service-card" style="padding: 0; overflow: hidden;">
                 <div class="project-img-container">
-                    <img src="assets/Site images/Labrang 3.jpg" alt="Labrang Site"
+                    <img src="assets/Site images/KK Site.JPG" alt="KK Site"
                         style="width: 100%; height: 300px; object-fit: cover;">
                 </div>
                 <div style="padding: 30px;">
-                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Residential</span>
-                    <h4 style="font-size: 1.5rem; margin-bottom: 15px;">Labrang Estate</h4>
-                    <p>Core structural work for luxury residential developments in the region.</p>
+                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ KK Site
+                        Development</span>
+                    <h4 style="font-size: 1.5rem; margin-bottom: 0;">Residential Project</h4>
                 </div>
             </div>
             <div class="service-card" style="padding: 0; overflow: hidden;">
                 <div class="project-img-container">
-                    <img src="assets/Site images/Labrang 8.jpg" alt="Labrang Construction"
+                    <img src="assets/Site images/TDL Camp 5 Site 1.jpg" alt="TDL Camp 5 Site 1"
                         style="width: 100%; height: 300px; object-fit: cover;">
                 </div>
                 <div style="padding: 30px;">
-                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Construction</span>
-                    <h4 style="font-size: 1.5rem; margin-bottom: 15px;">Labrang Structural Support</h4>
-                    <p>Advanced foundation and column placement, ensuring long-term durability and safety.</p>
+                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ TDL Camp 5 Site
+                        1</span>
+                    <h4 style="font-size: 1.5rem; margin-bottom: 0;">Residential Project</h4>
+                </div>
+            </div>
+
+            <!-- Community Projects -->
+            <div class="service-card" style="padding: 0; overflow: hidden;">
+                <div class="project-img-container has-gallery" onclick="openGallery(this)"
+                    data-images="assets/Site images/Kopan 1.JPG,assets/Site images/Kopan 2.JPG,assets/Site images/Kopan 3.jpg,assets/Site images/Kopan 4.jpg,assets/Site images/Kopan 5.jpg">
+                    <img src="assets/Site images/Kopan 1.JPG" alt="Kopan"
+                        style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div style="padding: 30px;">
+                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Kopan Project</span>
+                    <h4 style="font-size: 1.5rem; margin-bottom: 0;">Community Project</h4>
                 </div>
             </div>
             <div class="service-card" style="padding: 0; overflow: hidden;">
-                <div class="project-img-container">
-                    <img src="assets/Site images/Dhungkor.jpg" alt="Dhungkor Project"
+                <div class="project-img-container has-gallery" onclick="openGallery(this)"
+                    data-images="assets/Site images/Dhungkor 1.jpg,assets/Site images/Dhungkor 2.jpg">
+                    <img src="assets/Site images/Dhungkor 1.jpg" alt="Dhungkor"
                         style="width: 100%; height: 300px; object-fit: cover;">
                 </div>
                 <div style="padding: 30px;">
-                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Institutional</span>
-                    <h4 style="font-size: 1.5rem; margin-bottom: 15px;">Dhungkor Temple Foundation</h4>
-                    <p>Specialized structural engineering for traditional architecture projects.</p>
+                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Dhungkor
+                        Project</span>
+                    <h4 style="font-size: 1.5rem; margin-bottom: 0;">Community Project</h4>
                 </div>
             </div>
             <div class="service-card" style="padding: 0; overflow: hidden;">
-                <div class="project-img-container">
-                    <img src="assets/Site images/Private residence 5.jpg" alt="Private Residence"
+                <div class="project-img-container has-gallery" onclick="openGallery(this)"
+                    data-images="assets/Site images/Sera Jhe Ground 1.jpg,assets/Site images/Sera Jhe Ground 2.jpg,assets/Site images/Sera Jhe Ground 3.jpg,assets/Site images/Sera Jhe Ground 4.jpg,assets/Site images/Sera Jhe Ground 5.jpg">
+                    <img src="assets/Site images/Sera Jhe Ground 1.jpg" alt="Sera Jhe Ground"
                         style="width: 100%; height: 300px; object-fit: cover;">
                 </div>
                 <div style="padding: 30px;">
-                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Residential</span>
-                    <h4 style="font-size: 1.5rem; margin-bottom: 15px;">Modern Private Residence</h4>
-                    <p>Complete design-build execution for a high-end private family home.</p>
+                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Sera Jhe School
+                        Ground</span>
+                    <h4 style="font-size: 1.5rem; margin-bottom: 0;">Community Project</h4>
                 </div>
             </div>
+
+            <!-- Road Work -->
             <div class="service-card" style="padding: 0; overflow: hidden;">
                 <div class="project-img-container">
-                    <img src="assets/Site images/TDL camp5 site.JPG" alt="TDL Camp 5 Project"
+                    <img src="assets/Site images/RCC Road.jpg" alt="RCC Road"
                         style="width: 100%; height: 300px; object-fit: cover;">
                 </div>
                 <div style="padding: 30px;">
-                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Site Works</span>
-                    <h4 style="font-size: 1.5rem; margin-bottom: 15px;">TDL Camp 5 Site</h4>
-                    <p>Comprehensive construction management and execution for settlement infrastructure.</p>
+                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ RCC Road
+                        Construction</span>
+                    <h4 style="font-size: 1.5rem; margin-bottom: 0;">Road Work</h4>
+                </div>
+            </div>
+
+            <!-- Landscape Work -->
+            <div class="service-card" style="padding: 0; overflow: hidden;">
+                <div class="project-img-container">
+                    <img src="assets/Site images/4th Camp Landscape.JPG" alt="4th Camp Landscape"
+                        style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div style="padding: 30px;">
+                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ 4th Camp
+                        Landscape</span>
+                    <h4 style="font-size: 1.5rem; margin-bottom: 0;">Landscape Work</h4>
+                </div>
+            </div>
+
+            <!-- Steel Structure -->
+            <div class="service-card" style="padding: 0; overflow: hidden;">
+                <div class="project-img-container">
+                    <img src="assets/Site images/Steel Farmhouse 1.jpg" alt="Steel Farmhouse 1"
+                        style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div style="padding: 30px;">
+                    <span class="section-label" style="font-size: 0.75rem; margin-bottom: 10px;">/ Steel Structure
+                        Farmhouse</span>
+                    <h4 style="font-size: 1.5rem; margin-bottom: 0;">Steel Structure Farm House</h4>
                 </div>
             </div>
         </div>
@@ -183,7 +241,6 @@
                     <h4>Company</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="tibetan.html">Tibetan</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="process.html">Process</a></li>
                         <li><a href="projects.html">Projects</a></li>
@@ -195,9 +252,7 @@
                     <ul>
                         <li><a href="services/residential.html">Residential</a></li>
                         <li><a href="services/commercial.html">Commercial</a></li>
-                        <li><a href="services/design-build.html">Design & Build</a></li>
-                        <li><a href="services/structural.html">Structural & Civil</a></li>
-                        <li><a href="services/management.html">Project Management</a></li>
+                        <li><a href="services/interior.html">Interior Design</a></li>
                     </ul>
                 </div>
             </div>

@@ -158,41 +158,101 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }, speed);
     }
-    // Lightbox Functionality
+    // Gallery Lightbox Functionality
     const lightbox = document.createElement('div');
     lightbox.className = 'lightbox';
     lightbox.innerHTML = `
         <span class="lightbox-close">&times;</span>
+        <div class="lightbox-nav lightbox-prev"><i class="fas fa-chevron-left"></i></div>
+        <div class="lightbox-nav lightbox-next"><i class="fas fa-chevron-right"></i></div>
+        <div class="lightbox-counter">1 / 1</div>
         <img class="lightbox-content" src="" alt="Full Screen Project Image">
     `;
     document.body.appendChild(lightbox);
 
     const lightboxImg = lightbox.querySelector('.lightbox-content');
     const lightboxClose = lightbox.querySelector('.lightbox-close');
-    const projectImages = document.querySelectorAll('.project-img-container img');
+    const lightboxPrev = lightbox.querySelector('.lightbox-prev');
+    const lightboxNext = lightbox.querySelector('.lightbox-next');
+    const lightboxCounter = lightbox.querySelector('.lightbox-counter');
 
-    projectImages.forEach(img => {
-        img.parentElement.addEventListener('click', () => {
-            lightboxImg.src = img.src;
+    let currentGallery = [];
+    let currentIndex = 0;
+
+    const updateLightbox = () => {
+        lightboxImg.src = currentGallery[currentIndex];
+        lightboxCounter.innerText = `${currentIndex + 1} / ${currentGallery.length}`;
+
+        // Show/hide nav based on gallery length
+        if (currentGallery.length > 1) {
+            lightboxPrev.style.display = 'flex';
+            lightboxNext.style.display = 'flex';
+        } else {
+            lightboxPrev.style.display = 'none';
+            lightboxNext.style.display = 'none';
+        }
+    };
+
+    window.openGallery = (el) => {
+        const imagesAttr = el.getAttribute('data-images');
+        if (imagesAttr) {
+            currentGallery = imagesAttr.split(',');
+            currentIndex = 0;
+            updateLightbox();
             lightbox.classList.add('active');
             document.body.style.overflow = 'hidden';
-        });
-    });
+        }
+    };
+
+    const nextImage = (e) => {
+        if (e) e.stopPropagation();
+        currentIndex = (currentIndex + 1) % currentGallery.length;
+        updateLightbox();
+    };
+
+    const prevImage = (e) => {
+        if (e) e.stopPropagation();
+        currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
+        updateLightbox();
+    };
 
     const closeLightbox = () => {
         lightbox.classList.remove('active');
         document.body.style.overflow = '';
     };
 
-    if (lightboxClose) {
-        lightboxClose.addEventListener('click', closeLightbox);
-    }
+    if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+    if (lightboxNext) lightboxNext.addEventListener('click', nextImage);
+    if (lightboxPrev) lightboxPrev.addEventListener('click', prevImage);
 
     lightbox.addEventListener('click', (e) => {
-        if (e.target === lightbox) closeLightbox();
+        if (e.target === lightbox || e.target.classList.contains('lightbox-content')) {
+            // If it's a multi-image gallery, maybe clicking the image goes to next?
+            // For now, let's keep it simple: click background to close.
+            if (e.target === lightbox) closeLightbox();
+        }
     });
 
     document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('active')) return;
+
         if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') nextImage();
+        if (e.key === 'ArrowLeft') prevImage();
+    });
+
+    // Support legacy single images if they haven't been converted to openGallery yet
+    const projectImages = document.querySelectorAll('.project-img-container img');
+    projectImages.forEach(img => {
+        const container = img.parentElement;
+        if (!container.hasAttribute('onclick')) {
+            container.addEventListener('click', () => {
+                currentGallery = [img.src];
+                currentIndex = 0;
+                updateLightbox();
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        }
     });
 });
