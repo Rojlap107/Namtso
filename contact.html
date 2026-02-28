@@ -13,6 +13,17 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
     <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <style>
+        .info-item a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .info-item a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body class="internal-page">
@@ -38,59 +49,39 @@
     </header>
 
     <section class="page-content-start">
-        <div class="contact-container">
-            <div class="contact-info">
-                <span class="section-label">/ Contact Us</span>
+        <div style="max-width: 600px; margin: 0 auto;">
+            <div class="section-title" style="text-align: center; margin-bottom: 60px;">
+                <span>/ Contact Us</span>
                 <h2>Get in Touch</h2>
-                <div class="info-item">
-                    <div class="icon-box">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div>
-                        <h4>Address:</h4>
-                        <p>Namtso Complex, Between Old 2nd Camp and 3rd Camp, Bylakuppe, Karnataka 571104</p>
-                    </div>
+                <p>We'd love to hear from you. Reach out to discuss your project.</p>
+            </div>
+
+            <div class="info-item" style="margin-bottom: 35px;">
+                <div class="icon-box">
+                    <i class="fas fa-map-marker-alt"></i>
                 </div>
-                <div class="info-item">
-                    <div class="icon-box">
-                        <i class="fas fa-phone-alt"></i>
-                    </div>
-                    <div>
-                        <h4>Phone:</h4>
-                        <p>+91 97406 59469<br>+91 99729 74334</p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <div class="icon-box">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div>
-                        <h4>Email:</h4>
-                        <p>contact@namtso.in</p>
-                    </div>
+                <div style="text-align: left;">
+                    <h4>Address</h4>
+                    <p>Namtso Complex, Between Old 2nd Camp and 3rd Camp, Bylakuppe, Karnataka 571104</p>
                 </div>
             </div>
-            <div class="contact-form">
-                <form id="namtso-contact">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required placeholder="John Doe">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required placeholder="john@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+91 00000 00000">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required
-                            placeholder="Tell us about your project..."></textarea>
-                    </div>
-                    <button type="submit" class="btn-cta" style="width: 100%;">Send Message</button>
-                </form>
+            <div class="info-item" style="margin-bottom: 35px;">
+                <div class="icon-box">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div style="text-align: left;">
+                    <h4>Phone</h4>
+                    <p>Tenzin Tsephel: <a href="tel:+919740659469">+91 97406 59469</a><br>Ogyen Chodak: <a href="tel:+919972974334">+91 99729 74334</a></p>
+                </div>
+            </div>
+            <div class="info-item" style="margin-bottom: 35px;">
+                <div class="icon-box">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div style="text-align: left;">
+                    <h4>Email</h4>
+                    <p><a href="mailto:tenzincivil@gmail.com">tenzincivil@gmail.com</a></p>
+                </div>
             </div>
         </div>
     </section>

@@ -654,6 +654,18 @@ section {
     /* Reduced from default */
 }
 
+.about-text ul {
+    margin-top: 20px;
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.about-text ul li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
 .about-features {
     margin-top: 40px;
     display: grid;
